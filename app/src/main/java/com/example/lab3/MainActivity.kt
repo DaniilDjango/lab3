@@ -23,12 +23,7 @@ class MainActivity : AppCompatActivity() {
             val charToReplace = replaceChar.text.toString()
             val replacementChar = newChar.text.toString()
 
-            if (charToReplace.length == 1 && replacementChar.length == 1) {
-                val resultText = originalText.replace(charToReplace[0], replacementChar[0])
-                resultTextView.text = "Результат: $resultText"
-            } else {
-                resultTextView.text = "Введите корректные символы!"
-            }
+
         }
     }
 }
